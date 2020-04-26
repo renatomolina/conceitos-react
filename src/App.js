@@ -16,7 +16,7 @@ function App() {
   async function handleAddRepository() {
     const response = await api.post('/repositories', {
       title: `New repository ${Date.now()}`,
-      techs: 'Java',
+      techs: ['Java', 'Elixir'],
       url: 'http://www.google.com'
     });
 
